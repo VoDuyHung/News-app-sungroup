@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="deV-fk-vau" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="119"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="deV-fk-vau" id="w15-D3-qgR">
+                <frame key="frameInset" width="368" height="118"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfK-cs-Nxs">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4N-Q9-pd7">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-13-Ra1">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q4N-Q9-pd7" firstAttribute="centerY" secondItem="w15-D3-qgR" secondAttribute="centerY" constant="3.5" id="9wf-Qh-A4z"/>
+                    <constraint firstItem="tu8-13-Ra1" firstAttribute="bottom" secondItem="w15-D3-qgR" secondAttribute="bottomMargin" id="BGX-D6-PIC"/>
+                    <constraint firstItem="AfK-cs-Nxs" firstAttribute="leading" secondItem="w15-D3-qgR" secondAttribute="leadingMargin" id="Ie8-JP-WaQ"/>
+                    <constraint firstItem="q4N-Q9-pd7" firstAttribute="top" secondItem="w15-D3-qgR" secondAttribute="topMargin" constant="32" id="KFr-LU-1Fj"/>
+                    <constraint firstItem="AfK-cs-Nxs" firstAttribute="trailing" secondItem="w15-D3-qgR" secondAttribute="trailingMargin" id="Rpq-Ua-KQw"/>
+                    <constraint firstItem="AfK-cs-Nxs" firstAttribute="top" secondItem="w15-D3-qgR" secondAttribute="top" id="Rqh-nr-ZY9"/>
+                    <constraint firstItem="tu8-13-Ra1" firstAttribute="top" secondItem="q4N-Q9-pd7" secondAttribute="bottom" constant="2" id="gDo-yq-HXe"/>
+                    <constraint firstItem="AfK-cs-Nxs" firstAttribute="leading" secondItem="q4N-Q9-pd7" secondAttribute="leading" id="gr0-3s-4zK"/>
+                    <constraint firstItem="q4N-Q9-pd7" firstAttribute="leading" secondItem="tu8-13-Ra1" secondAttribute="leading" id="kZo-St-mCx"/>
+                    <constraint firstItem="tu8-13-Ra1" firstAttribute="top" secondItem="AfK-cs-Nxs" secondAttribute="bottom" constant="44" id="wZS-Nj-aMT"/>
+                    <constraint firstItem="q4N-Q9-pd7" firstAttribute="trailing" secondItem="tu8-13-Ra1" secondAttribute="trailing" id="zPy-zx-o4r"/>
+                    <constraint firstItem="AfK-cs-Nxs" firstAttribute="trailing" secondItem="q4N-Q9-pd7" secondAttribute="trailing" id="zlM-mQ-rhW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="1" minY="0.0" maxX="15" maxY="0.0"/>
+            <connections>
+                <outlet property="contentSearch" destination="q4N-Q9-pd7" id="goD-FU-Ef5"/>
+                <outlet property="emailSearch" destination="tu8-13-Ra1" id="RaK-vx-V1i"/>
+                <outlet property="titleSearch" destination="AfK-cs-Nxs" id="2n9-0O-W9s"/>
+            </connections>
+            <point key="canvasLocation" x="-201" y="-140"/>
+        </tableViewCell>
+    </objects>
+</document>
